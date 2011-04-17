@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opVersionInfoPlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>バージョン情報</summary>
+ <description>MediaWikiのSpecial:Versionページ風の情報を表示するプラグイン。
+SNSにインストールしたプラグインの一覧をメンバーに見せびらかす用途などに最適です。
+
+インストール後は、
+http://（OpenPNE3を設置したURL）/version
+または、
+ページ上部の「設定変更」 → 右側ナビゲージョンの「バージョン情報」
+からバージョン情報を閲覧できます。</description>
+ <lead>
+  <name>upsilon</name>
+  <user>upsilon</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2011-04-17</date>
+ <time>12:08:14</time>
+ <version>
+  <release>1.0</release>
+  <api>1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>Apache</license>
+ <notes>
+first release
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9d396311d51701a56aa1602718e30b55" name="apps/pc_frontend/config/routing.yml" role="data" />
+   <file baseinstalldir="/" md5sum="0337c68de1d72a7edcb4ba3cb7d29046" name="apps/pc_frontend/modules/member/config/view.yml" role="data" />
+   <file baseinstalldir="/" md5sum="c9adfa21dbdb5a4bc47d3ca9f0519852" name="apps/pc_frontend/modules/version/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="22cd259853b1011970f6b1650e4e4448" name="apps/pc_frontend/modules/version/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="536e0cbe9247fd092275fe7582d1eace" name="apps/pc_frontend/modules/version/config/cache.yml" role="data" />
+   <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/pc_frontend/modules/version/config/security.yml" role="data" />
+   <file baseinstalldir="/" md5sum="686dad6180e04c5f84caa55f1684168c" name="apps/pc_frontend/modules/version/config/view.yml" role="data" />
+   <file baseinstalldir="/" md5sum="3c9ce27a54a76d6116042e187d52f8db" name="apps/pc_frontend/modules/version/templates/indexSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="9ca8cbb831ee4b9f75f620705e04e9bc" name="apps/pc_frontend/modules/version/templates/_core.php" role="data" />
+   <file baseinstalldir="/" md5sum="20d2ed371532b1bde2d89ed8dfc13987" name="apps/pc_frontend/modules/version/templates/_plugins.php" role="data" />
+   <file baseinstalldir="/" md5sum="d078162d7bc77dd6d5b2d4e283d72d3a" name="apps/pc_frontend/modules/version/templates/_versionNav.php" role="data" />
+   <file baseinstalldir="/" md5sum="ce7566e7c97a4c0d21021d4983811147" name="apps/pc_frontend/templates/_partsVersionInfoCore.php" role="data" />
+   <file baseinstalldir="/" md5sum="9e61aa7550bcd91869a0d556bec44940" name="apps/pc_frontend/templates/_partsVersionInfoPlugins.php" role="data" />
+   <file baseinstalldir="/" md5sum="6059fe5458d6348af2659d38af527912" name="test/bootstrap/database.php" role="data" />
+   <file baseinstalldir="/" md5sum="155ce720c060aa5fc9e2bbbc779b7a13" name="test/bootstrap/functional.php" role="data" />
+   <file baseinstalldir="/" md5sum="53df737807ad0e3ba7dd2abb8cab3e3c" name="test/bootstrap/unit.php" role="data" />
+   <file baseinstalldir="/" md5sum="8471fade12b0760fab6715ffb8b8f9e4" name="test/fixtures/test_data.yml" role="data" />
+   <file baseinstalldir="/" md5sum="8a98cacfcc151f2808c399543fd52679" name="test/functional/mobile_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="1faa199e87c1ce270e86edee706b37fd" name="test/functional/pc_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="52440ab0abcc01c98551283f1e9942e1" name="test/unit/model/SkeletonTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="aa69b32ad3544e709dcad519d31b0f42" name="web/css/main.css" role="data" />
+   <file baseinstalldir="/" md5sum="617856c3fb2b7177fe7fffa8a1ddd1a1" name="dependencies.yml.sample" role="data" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-17</date>
+   <license>Apache</license>
+   <notes>
+first release
+   </notes>
+  </release>
+ </changelog>
+</package>
