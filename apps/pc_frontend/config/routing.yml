@@ -1,0 +1,7 @@
+version_index:
+  url: /version
+  params: { module: version, action: index }
+
+version_nodefault:
+  url: /version/*
+  params: { module: default, action: error }

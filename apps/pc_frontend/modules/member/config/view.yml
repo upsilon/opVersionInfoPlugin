@@ -1,0 +1,7 @@
+configSuccess:
+  customize:
+    versionInfo:
+      template: [version, versionNav]
+      parts: [navForDelete]
+      target: [before]
+      is_component: false

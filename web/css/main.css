@@ -1,0 +1,12 @@
+table.versionInfo {
+  table-layout: auto !important;
+}
+
+table.versionInfo th, table.versionInfo td {
+  padding: 2px;
+}
+
+table.versionInfo th {
+  text-align: center;
+  font-weight: bold;
+}

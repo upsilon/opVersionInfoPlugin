@@ -1,0 +1,5 @@
+_core:
+  enabled: true
+
+_plugins:
+  enabled: true
